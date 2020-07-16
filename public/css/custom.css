@@ -1,0 +1,119 @@
+.centro{
+    align-self: center;
+    padding-top: 200px;
+    padding-left: 550px;
+    padding-right: 550px;
+}
+
+.bg {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/59a763bad7bdce18169fc6d7/1589991540159-UDSUZZ56IDHTBSNQKGQ6/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USOFn4xF8vTWDNAUBm5ducQhX-V3oVjSmr829Rco4W2Uo49ZdOtO_QXox0_W7i2zEA/groups+HP+BG.jpg?format=2500w");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.tamanho{
+    padding-left: 112px;
+    padding-right: 112px;
+}
+
+/* a:link, a:visited{
+    color: rgb(225, 175, 141);
+    text-decoration: none;
+    cursor: auto; 
+    font-size: 15px;
+  }
+
+a:hover {
+    color: rgb(224, 144, 91);
+    text-decoration: underline;
+}
+  
+a:link:active, a:visited:active {
+    color: rgb(218, 105, 30);
+  } */
+
+.fonte{
+    font-family: Calibri !important;
+    font-style: bold;
+}
+
+.blue{
+    background-color: rgb(63,132,191);
+    margin: none;
+}
+
+.blueclassic{
+    background-color: rgb(0, 66, 117) !important;
+    margin: none;
+}
+
+.peach{
+    background-color: rgb(225, 175, 141);
+    margin: none;
+}
+
+.rosinha{
+    color: rgb(225, 175, 141);
+    margin: none;
+}
+
+.branquinho{
+    background-color:#fff;
+    margin: none;
+}
+.oftr{
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    overflow-y: scroll;
+    scrollbar-width: none;  /* Firefox */
+    /* display: table; */
+    /* flex-wrap: wrap; */
+}
+
+.cinza{
+    background-color:rgb(240,240,240);
+    margin: none;
+}
+
+.relatorioum{
+    color: #fff !important;
+    background-color: rgb(63,132,191);
+}
+
+.bloquinho{
+    /* width: 100%; */
+    /* height: 100%; */
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(165, 193, 206);
+    /* flex: 1; */
+    padding-top: 1rem;
+}
+.button-success {
+    background: rgb(28, 184, 65);
+    /* this is a green */
+}
+
+.button-error {
+    background: rgb(63,132,191);
+    color:white;
+    text-decoration: none;
+    /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(95, 126, 211);
+    color:white;
+    /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(53, 148, 177);
+    color:white;
+    text-decoration: none;
+    /* this is a light blue */
+}
+

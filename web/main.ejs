@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Agenda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/calendar.css">
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark blueclassic">
+        <a href="/main"><img src="images/logo.png" alt="some text" width=40 height=40></a>&nbsp &nbsp &nbsp
+        <a class="navbar-brand" href="#">Agenda</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Minha Conta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ajuda</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="blue btn btn-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+        </div>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="/main"><span class="fa fa-home mr-3"></span> Início</a>
+          </li>
+          <!-- <li>
+            <a href="#"><span class="fa fa-user mr-3"></span> Quadro de Tarefas</a>
+          </li> -->
+          <li>
+            <a href="/compromisso"><span class="fa fa-calendar mr-3"></span> Eventos</a>
+          </li>
+          <li>
+            <a href="/blocoNotas"><span class="fa fa-sticky-note mr-3"></span> Bloco de Notas</a>
+          </li>
+          <li>
+            <a href="/contato"><span class="fa fa-address-book-o mr-3"></span> Contatos</a>
+          </li>
+          <li>
+            <a href="/sobre"><span class="fa fa-user-o mr-3"></span> Sobre</a>
+          </li>
+          <li>
+            <a href="/sair_loggof"><span class="fa fa-sign-out mr-3"></span> Sair</a>
+          </li>
+        </ul>
+
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <div id="calendar-wrap">
+          <!-- <header>
+            <h1>Julho 2020</h1>
+          </header> -->
+          <div id="calendar">
+            <ul class="mes">
+              <li>  </li>
+              <li>  </li>
+              <li><button class="btn btn-sm">◀</button></li>
+              <li>Julho de 2020</li>
+              <li><button class="btn btn-sm">▶</button></li>
+              <li></li>
+              <li>
+                <a class="btn btn-sm btn-block relatorioum" href="/relatorio">Relatório</a>
+              </li>
+            </ul>
+            <ul class="weekdays">
+              <li>DOM.</li>
+              <li>SEG.</li>
+              <li>TER.</li>
+              <li>QUA.</li>
+              <li>QUI.</li>
+              <li>SEX.</li>
+              <li>SÁB.</li>
+            </ul>
+  
+            <!-- Days from previous month -->
+  
+            <ul class="days">
+              <li class="day other-month">
+                <div class="date">28</div>    					
+              </li>
+              <li class="day other-month">
+                <div class="date">29</div>    					
+              </li>
+              <li class="day other-month">
+                <div class="date">30</div>    					
+              </li>
+              <li class="day">
+                <div class="date">1</div>
+                <div class="event">
+                  <div class="event-desc">
+                    Levar o cachorro no veterinário.
+                  </div>
+                </div>    					
+              </li>
+              <li class="day">
+                <div class="date">2</div>    					
+              </li>
+              <li class="day">
+                <div class="date">3</div>    					
+              </li>
+              <li class="day">
+                <div class="date">4</div>    					
+              </li>
+  
+              <!-- Days in current month -->
+  
+              <li class="day">
+                <div class="date">5</div>    					
+              </li>
+              <li class="day">
+                <div class="date">6</div>
+                <div class="event">
+                  <div class="event-desc">
+                    Entrevista de emprego.
+                  </div>
+                </div>     					
+              </li>
+            </ul>
+  
+              <!-- Row #2 -->
+  
+            <ul class="days">
+              <li class="day">
+                <div class="date">7</div>    					
+              </li>
+              <li class="day">
+                <div class="date">8</div>    					
+              </li>
+              <li class="day">
+                <div class="date">9</div>    					
+              </li>
+              <li class="day">
+                <div class="date">10</div>    					
+              </li>
+              <li class="day">
+                <div class="date">11</div>
+                <div class="event">
+                  <div class="event-desc">
+                    Festa do João.
+                  </div>
+                </div>     					
+              </li>
+              <li class="day">
+                <div class="date">12</div>    					
+              </li>
+              <li class="day">
+                <div class="date">13</div>    					
+              </li>
+            </ul>
+  
+              <!-- Row #3 -->
+  
+            <ul class="days">
+              <li class="day">
+                <div class="date">14</div>    					
+              </li>
+              <li class="day">
+                <div class="date">15</div>    					
+              </li>
+              <li class="day">
+                <div class="date">16</div>    					
+              </li>
+              <li class="day">
+                <div class="date">17</div>    					
+              </li>
+              <li class="day">
+                <div class="date">18</div><div class="event">
+                  <div class="event-desc">
+                    Chá de bebê da Ashley.
+                  </div>
+                </div>     					
+              </li>
+              <li class="day">
+                <div class="date">19</div>    					
+              </li>
+              <li class="day">
+                <div class="date">20</div>    					
+              </li>
+            </ul>
+  
+              <!-- Row #4 -->
+  
+            <ul class="days">
+              <li class="day">
+                <div class="date">21</div>    					
+              </li>
+              <li class="day">
+                <div class="date">22</div>    					
+              </li>
+              <li class="day">
+                <div class="date">23</div>    					
+              </li>
+              <li class="day">
+                <div class="date">24</div>    					
+              </li>
+              <li class="day">
+                <div class="date">25</div>    					
+              </li>
+              <li class="day">
+                <div class="date">26</div>
+                <div class="event">
+                  <div class="event-desc">
+                    Programar o novo Windows.
+                  </div>
+                </div>     					
+              </li>
+              <li class="day">
+                <div class="date">27</div>    					
+              </li>
+            </ul>
+  
+                <!-- Row #5 -->
+  
+            <ul class="days">
+              <li class="day">
+                <div class="date">28</div>    					
+              </li>
+              <li class="day">
+                <div class="date">29</div>
+                <div class="event">
+                  <div class="event-desc">
+                    Aniversário muito especial.
+                  </div>
+                </div>     					
+              </li>
+              <li class="day">
+                <div class="date">30</div>    					
+              </li>
+              <li class="day">
+                <div class="date">31</div>    					
+              </li>
+            </ul>
+  
+          </div><!-- /. calendar -->
+        </div><!-- /. wrap -->
+      </div>
+		</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

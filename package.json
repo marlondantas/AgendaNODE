@@ -1,0 +1,30 @@
+{
+  "name": "agendafatec",
+  "version": "1.0.0",
+  "description": "Agenda usando node e mongo",
+  "main": "main.js",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "moment": "^2.27.0",
+    "moment-timezone": "^0.5.31",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.20",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7",
+    "reload": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon main.js"
+  },
+  "keywords": [
+    "node",
+    "mongo"
+  ],
+  "author": "Canudos Works",
+  "license": "ISC"
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/tabela.css">   
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a href="/main"><img src="images/logo.png" alt="some text" width=40 height=40></a>&nbsp &nbsp &nbsp
+    <a class="navbar-brand" href="#">Agenda</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/main">Minha Conta</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+  <center>
+    <h1>Relatório de Contatos</h1>
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Sobrenome</th>
+    <th>Empresa</th>
+    <th>Celular</th>
+    <th>Telefone</th>
+    <th>Email</th>
+    <th>Endereco</th>
+    <th>Categoria</th>
+    <th>Destaque</th>
+  </tr>
+  <%if (contatos.length > 0){ %>
+    <% contatos.forEach(function(contato){ %>        
+            <tr>
+              <td><%= contato.nome %></td>
+              <td><%= contato.sobrenome %></td>
+              <td><%= contato.empresa %></td>
+              <td><%= contato.celular %></td>
+              <td><%= contato.telefone %></td>
+              <td><%= contato.email %></td>
+              <td><%= contato.endereco %></td>
+              <td><%= contato.categoria %></td>
+              <td>   
+              <% if(contato.destaque){ %>
+                <img id='destaque' src="/images/star.png" width=15 height=15>
+              <% } %>
+              </td>
+            </tr>
+    <% }) %>
+  <% } %>
+</table>
+</center>
+</body>
+</html>

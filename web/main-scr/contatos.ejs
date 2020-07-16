@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Agenda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/replace.js"></script>
+  </head>
+  <body class="fonte">
+      <nav class="navbar navbar-expand-lg navbar-dark blueclassic">
+        <a href="/main"><img src="images/logo.png" alt="some text" width=40 height=40></a>&nbsp &nbsp &nbsp
+        <a class="navbar-brand" href="/main">Agenda</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/main">Minha Conta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/newcontato">Adicionar Contatos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/relatorio2">Relatório</a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ajuda</a>
+            </li> -->
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+    </nav>
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+        </div>
+        <ul class="list-unstyled components mb-5">
+          <li >
+            <a href="/main"><span class="fa fa-home mr-3"></span> Início</a>
+          </li>
+          <!-- <li>
+            <a href="#"><span class="fa fa-user mr-3"></span> Quadro de Tarefas</a>
+          </li> -->
+          <li>
+            <a href="/compromisso"><span class="fa fa-calendar mr-3"></span> Eventos</a>
+          </li>
+          <li>
+            <a href="/blocoNotas"><span class="fa fa-sticky-note mr-3"></span> Bloco de Notas</a>
+          </li>
+          <li class="active">
+            <a href="/contato"><span class="fa fa-address-book-o mr-3"></span> Contatos</a>
+          </li>
+          <li>
+            <a href="/sobre"><span class="fa fa-user-o mr-3"></span> Sobre</a>
+          </li>
+          <li>
+            <a href="/sair_loggof"><span class="fa fa-sign-out mr-3"></span> Sair</a>
+          </li>
+        </ul>
+
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+      <div class="container fonte">
+                  <div class="row">
+                      <div class="col-sm">
+                        <% contatos.forEach(function(contato){ %>
+                          <div class="oftr">                        
+                                <button onclick="changeContato('<%= contato.nome %>','<%= contato.sobrenome %>','<%= contato.empresa %>','<%= contato.celular %>','<%= contato.telefone %>','<%= contato.email %>','<%= contato.endereco %>','<%= contato.obersevacao %>','<%= contato.categoria %>','<%= contato.destaque %>','<%= contato._id %>');" class="bloquinho"> <%= contato.nome %> <strong><%= contato.sobrenome %></strong></button>
+                          </div>
+                        <% }) %>
+                      </div>
+
+                      <div class="col-sm">
+                        <div class="card">
+                          <div class="card-header bg-primary text-white"><p id="labeldestaque"><img id='destaque'style="display:none" src="images/star.png" width=15 height=15></p> <h4 class="text-white" id="nome"></h4><h4 class="text-white"  id="sobrenome"> </h4></div>
+                          <div class="card-body cinza text-black"><p id="empresa"></p></div>
+                          <div class="card-body cinza text-black"><p id="celular"></p></div>
+                          <div class="card-body cinza text-black"><p id="telefone"></p></div>
+                          <div class="card-body cinza text-black"><p id="email"></p></div>
+                          <div class="card-body cinza text-black"><p id="endereco"></p></div>
+                          <!-- <div class="card-body bg-secondary text-white"><p id="observacao"></p></div> -->
+                          <div class="card-body cinza text-black"><p id="categoria"></p></div>
+
+                          <a class="button-error pure-button btn-block cores" id="btnExcluir" href="">Excluir</a>
+                          <a class="button-secondary pure-button btn-block cores" id="btnEditar" href="">Editar</a>
+                        </div>
+                      </div>
+                  </div>     
+      </div>
+		</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
